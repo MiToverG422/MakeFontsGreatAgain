@@ -1,10 +1,11 @@
 CN
 
-未发布
+17.0.1.08-31-alpha2-fix(1717180004)
  - 修复部分 Android 16 ROM 中六组 Noto 静态/可变字体混用触发的字体变体闪退。
  - 安装时检查 Regular 字体的 fvar/wght 范围；旧系统保留静态 Bold 引用。
  - 修复 Settings / Gboard 等应用通过 Google Sans / Flex / Material variable 正文字体族绕过主字体的问题；安装时定向生成 OEM 字体别名，保留默认字重和其他自定义字体。
  - 保留 fonts-modification 配置结构，避免把 ROM 的字体定制 XML 错误覆盖为 familyset。
+ - 基于上游 SELFUSE 版打包，保留字体和原生组件，模块版本增加 -fix；本次不包含 Xposed APK 或 Telegram 专用适配。
  
 17.0.1.08-31-alpha2(1717180003)
  - 1.适配HyperOS4
