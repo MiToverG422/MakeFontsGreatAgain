@@ -57,6 +57,13 @@ else
   rm -rf "$MODPATH/zygisk"
 fi
 
+# Resolve variable/static Noto variants before generating mounted XML files.
+. "$MODPATH/font_compat.sh" || abort "- Missing font compatibility helper"
+mfga_prepare_font_config "$MODPATH/fonts.xml" "$MODPATH/system/fonts" "/system/fonts" ||
+  abort "- Failed to prepare compatible font configuration"
+
+. "$MODPATH/font_coverage.sh" || abort "- Missing font coverage helper"
+[ -r "$MODPATH/font_coverage.awk" ] || abort "- Missing font coverage parser"
 . "$MODPATH/search_dirs.sh"
 
 ui_print "- Welcome to MFGA!"

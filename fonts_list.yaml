@@ -4,6 +4,7 @@ fallback:
     - flyme_fallback.xml
 
   blacklist:
+    # 禁止用完整 familyset 覆盖。安装器会单独重映射其中已知的 Google 正文字体族。
     - fonts_customization.xml
 
   reverse:

@@ -4,6 +4,8 @@
 [![Coolapk](https://img.shields.io/badge/Follow-Coolapk-3DDC84?style=flat-square&logo=android&logoColor=white)](http://www.coolapk.com/u/28259173)
  
 # MFGA
+See [variable-font compatibility](docs/font-variation-compat.md) for the crash workaround and packaging requirements, and [font coverage](docs/font-coverage.md) for the Settings / Gboard system-family fix, validation, and limitations (Chinese).
+
 > **This module achieves complete glyph coverage of all defined characters in ``Unicode Latest`` (including private use areas and supplementary private use areas) by combining multiple fonts [Font Sources & Licenses](https://github.com/Numbersf/MakeFontsGreatAgain/blob/main/LICENSES.md). ``Reserved`` symbols and undefined characters in private use areas will display their code information using ``ZUno-Number.ttf``**
  
 > **This module can block ``GMS fonts`` through ``action.sh`` and the ``WebUI``, covering most ``GAPPS``. This feature conflicts with the ``PIF module`` (also partially depending on the mounting method), so please enable the uninstall module separately for ``Play Services and Store``, do not enable “default uninstall module”, and do not use the ``shamiko`` whitelist**

@@ -4,6 +4,8 @@
 [![Coolapk](https://img.shields.io/badge/Follow-Coolapk-3DDC84?style=flat-square&logo=android&logoColor=white)](http://www.coolapk.com/u/28259173)
  
 # MFGA
+字体变体闪退的兼容修复及安装说明见[可变字体兼容](docs/font-variation-compat.md)；Settings / Gboard 的系统字体覆盖修复、验证和适用范围见[字体覆盖范围](docs/font-coverage.md)。
+
 > **本模块通过联合多个字体 [字体来源与许可](https://github.com/Numbersf/MakeFontsGreatAgain/blob/main/LICENSES.md) ，实现了对 ``Unicode Latest`` 已定义字符的完整字形覆盖（包括私用区和补充私用分区）。``Reserved``符号以及私用区未定义符号将由``ZUno-Number.ttf``显示其编码信息**
  
 > **本模块可以通过``action.sh``以及``WebUI``完成对``GMS字体``的屏蔽操作，得以覆盖大部分``GAPPS``。此功能与``PIF模块``冲突(也和挂载方式有一定关系)，请对``play服务和商店``单独开启卸载模块，禁止开启“默认卸载模块”，禁止使用``shamiko``白名单**

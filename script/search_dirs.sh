@@ -60,6 +60,25 @@ handle_file() {
 
   ui_print "$FOUND_FONT $FILE_NAME"
 
+  # OEM customization has a different schema from fonts.xml. Never copy a
+  # familyset over it, including ROM-specific fonts_customization_*.xml files.
+  if [ "$FILE_NAME" = "fonts_customization.xml" ] ||
+      grep -Eq '<fonts-modification([[:space:]>]|$)' "$FILE_PATH"; then
+    if [ "$FILE_NAME" = "fonts_customization.xml" ]; then
+      local coverage_status
+      mfga_prepare_font_customization "$FILE_PATH" \
+        "$MODPATH/system/$MOD_SUBDIR/$FILE_NAME" "$MODPATH/font_coverage.awk"
+      coverage_status=$?
+      case "$coverage_status" in
+        0) ui_print "- Google text families mapped to MFGA: $FILE_NAME" ;;
+        3) ui_print "- No matching Google text families: $FILE_NAME" ;;
+        *) abort "- Failed to prepare OEM font coverage: $FILE_PATH" ;;
+      esac
+    fi
+    PROCESSED_FILES="$PROCESSED_FILES $FILE_PATH"
+    return
+  fi
+
   if is_blacklisted "$FILE_NAME"; then
     ui_print "$FONT_BLOCKED $FILE_NAME"
     PROCESSED_FILES="$PROCESSED_FILES $FILE_PATH"

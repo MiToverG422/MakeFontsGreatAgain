@@ -404,7 +404,7 @@
         </font>
         <font weight="700" style="normal">NotoSansHebrew-Bold.ttf</font>
         <font weight="400" style="normal" fallbackFor="serif">NotoSerifHebrew-Regular.ttf</font>
-        <font weight="700" style="normal" fallbackFor="serif">NotoSerifHebrew-Bold.ttf</font>
+        <font weight="700" style="normal" fallbackFor="serif">NotoSerifHebrew-Regular.ttf<axis tag="wght" stylevalue="700"/></font>
     </family>
     <family lang="und-Thai" variant="elegant">
         <font weight="400" style="normal" postScriptName="NotoSansThai">NotoSansThai-Regular.ttf
@@ -413,7 +413,7 @@
         <font weight="400" style="normal" fallbackFor="serif">
             NotoSerifThai-Regular.ttf
         </font>
-        <font weight="700" style="normal" fallbackFor="serif">NotoSerifThai-Bold.ttf</font>
+        <font weight="700" style="normal" fallbackFor="serif">NotoSerifThai-Regular.ttf<axis tag="wght" stylevalue="700"/></font>
     </family>
     <family lang="und-Thai" variant="compact">
         <font weight="400" style="normal" postScriptName="NotoSansThaiUI">
@@ -549,7 +549,7 @@
         <font weight="400" style="normal" postScriptName="NotoSansGujarati">
             NotoSansGujarati-Regular.ttf
         </font>
-        <font weight="700" style="normal">NotoSansGujarati-Bold.ttf</font>
+        <font weight="700" style="normal">NotoSansGujarati-Regular.ttf<axis tag="wght" stylevalue="700"/></font>
         <font weight="400" style="normal" fallbackFor="serif"
               postScriptName="NotoSerifGujarati-Regular">NotoSerifGujarati-VF.ttf
             <axis tag="wght" stylevalue="400"/>
@@ -888,7 +888,7 @@
     <family lang="und-Orya" variant="elegant">
         <font weight="400" style="normal" postScriptName="NotoSansOriya">NotoSansOriya-Regular.ttf
         </font>
-        <font weight="700" style="normal">NotoSansOriya-Bold.ttf</font>
+        <font weight="700" style="normal">NotoSansOriya-Regular.ttf<axis tag="wght" stylevalue="700"/></font>
     </family>
     <family lang="und-Orya" variant="compact">
         <font weight="400" style="normal" postScriptName="NotoSansOriyaUI">
@@ -1006,11 +1006,11 @@
     <family lang="und-Laoo" variant="elegant">
         <font weight="400" style="normal">NotoSansLao-Regular.ttf
         </font>
-        <font weight="700" style="normal">NotoSansLao-Bold.ttf</font>
+        <font weight="700" style="normal">NotoSansLao-Regular.ttf<axis tag="wght" stylevalue="700"/></font>
         <font weight="400" style="normal" fallbackFor="serif">
             NotoSerifLao-Regular.ttf
         </font>
-        <font weight="700" style="normal" fallbackFor="serif">NotoSerifLao-Bold.ttf</font>
+        <font weight="700" style="normal" fallbackFor="serif">NotoSerifLao-Regular.ttf<axis tag="wght" stylevalue="700"/></font>
     </family>
     <family lang="und-Laoo" variant="compact">
         <font weight="400" style="normal" postScriptName="NotoSansLaoUI">NotoSansLaoUI-Regular.ttf
